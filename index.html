@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sticky-header">
+        <h1>Gestor de tareas</h1>
+        <div class="new-task">
+            <input type="text" id="task-input" placeholder="Añadir tarea...">
+            <label for="due-date">Fecha límite</label>
+            <input type="date" id="due-date" placeholder="Fecha límite">
+            <label for="priority">Prioridad</label>
+            <select id="priority">
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+            <button id="add-task">Añadir</button>
+        </div>
+        <div class="filters">
+            <label for="filter-priority">Filtrar por</label>
+            <select id="filter-priority">
+                <option value="todas">Todas</option>
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+            <input type="text" id="search" placeholder="Buscar tareas...">
+        </div>
+    </div>
+    
+    <div class="task-list-container">
+        <h1>Lista de tareas</h1>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
